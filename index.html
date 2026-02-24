@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jarsila Paul Web Solutions</title>
+
+<meta name="description" content="Professional Full Stack Developer Portfolio">
+<meta name="author" content="Jarsila Paul">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+body{background:#0f172a;color:white;scroll-behavior:smooth;}
+a{text-decoration:none;color:inherit}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#38bdf8;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+nav a{color:white;margin:0 10px;font-weight:bold;}
+nav a:hover{color:#facc15;}
+
+/* SECTIONS */
+section{
+  padding:100px 20px;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+#hero{background:#1e3a8a;}
+#about{background:#1e293b;}
+#services{background:#111827;}
+#projects{background:#1e293b;}
+#contact{background:#111827;}
+
+/* PROJECT CARDS */
+.project-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+.project-card{
+  background:#0f172a;
+  padding:15px;
+  border-radius:10px;
+  max-width:300px;
+  transition:0.3s;
+}
+.project-card:hover{
+  transform:scale(1.05);
+}
+.project-card img{
+  width:100%;
+  border-radius:8px;
+}
+
+/* WHATSAPP BUTTON */
+#whatsappButton{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:white;
+  font-size:28px;
+  padding:15px;
+  border-radius:50%;
+  box-shadow:0 6px 15px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+#whatsappButton:hover{
+  transform:scale(1.1);
+}
+
+/* FLOATING HIRE ME BUTTON */
+#hireMeButton{
+  position:fixed;
+  bottom:25px;
+  left:25px;
+  background:#facc15;
+  color:black;
+  padding:15px 25px;
+  border-radius:30px;
+  font-weight:bold;
+  box-shadow:0 6px 15px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+#hireMeButton:hover{
+  background:#eab308;
+  transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{flex-direction:column;}
+  .project-container{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div>Jarsila Paul</div>
+  <div>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <h1>Professional Web Developer</h1>
+  <p>I build modern, scalable web solutions for businesses.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am Jarsila Paul, a Full Stack Developer delivering secure and scalable applications.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+  <p>✔ Web Development</p>
+  <p>✔ SaaS Applications</p>
+  <p>✔ Website Maintenance</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-container">
+
+    <div class="project-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsvkVc-TUYjiB_4J8x_-8VBjjKktCwvAJsBvpNYlazNflObSOu-VYHjRw&s=10">
+      <h3>Project 1</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qEZIytkmSDToxM3jMS5NvEC7OGfwdZPPBjzhxya0-wU4o-8LKAbfjI4&s=10">
+      <h3>Project 2</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRb49aevdPJwFnDkTqGmfrIsL9RNiVzd0ACS6R5EO07YeUZLv8WZCmSVS&s=10">
+      <h3>Project 3</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFWErU3vqESEuiWHi4-45SV_8AhYgVsnsT8ALVVp-Do5C1TTveW9iAIQ&s=10">
+      <h3>Project 4</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: jarsilapaul@gmail.com</p>
+  <p>Phone: +254758741655</p>
+</section>
+
+<!-- FLOATING HIRE ME BUTTON -->
+<a href="https://wa.me/254758741655?text=Hello%20Jarsila%20Paul%2C%20I%20want%20to%20hire%20you%20for%20a%20project."
+   target="_blank"
+   id="hireMeButton">
+   Hire Me
+</a>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/254758741655?text=Hello%20Jarsila%20Paul%2C%20I%20am%20interested%20in%20your%20services."
+   target="_blank"
+   id="whatsappButton">
+   💬
+</a>
+
+</body>
+</html>class=""
